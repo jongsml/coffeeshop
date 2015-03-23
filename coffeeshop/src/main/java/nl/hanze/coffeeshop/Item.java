@@ -37,17 +37,14 @@ public class Item
 		if (obj == null)
 			return false;
 		Item other = (Item) obj;
-		if (name == null) {
+		if (name == null) 
+		{
 			if (other.name != null)
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
-		if (Double.doubleToLongBits(price) != Double
-				.doubleToLongBits(other.price))
+		if (Double.doubleToLongBits(price) != Double.doubleToLongBits(other.price))
 			return false;
 		return true;
 	}
-	
-	
-
 }

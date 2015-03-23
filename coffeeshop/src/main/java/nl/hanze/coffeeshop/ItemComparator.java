@@ -2,7 +2,7 @@ package nl.hanze.coffeeshop;
 
 import java.util.Comparator;
 
-public class ItemComparator implements Comparator
+public class ItemComparator implements Comparator<Object>
 {
 
 	 public int compare(Object o1, Object o2){
